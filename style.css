@@ -1,7 +1,10 @@
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 200px;
+    grid-template-columns: repeat(5, 50px);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%
 }
 
 .grid-item {
@@ -9,6 +12,6 @@
     border: 1px black solid;
     padding: 2px;
     max-width: 40px;
-    margin: 0%;
+    margin: 0% !important;
 
 }
