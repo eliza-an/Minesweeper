@@ -1,0 +1,14 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 200px;
+}
+
+.grid-item {
+    text-align: center;
+    border: 1px black solid;
+    padding: 2px;
+    max-width: 40px;
+    margin: 0%;
+
+}
