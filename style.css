@@ -15,3 +15,7 @@
     margin: 0% !important;
 
 }
+
+.grid-item:hover{
+    cursor: pointer;
+}
