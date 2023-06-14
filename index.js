@@ -13,9 +13,7 @@ while (randomArray.length < 10) {
 // Change the values of selected divs to 'x'
 randomArray.forEach(index => {
   gridItems[index].textContent = 'x';
-  if(gridItems[index].textContent ==='x'){
-    gridItems[index+1].textContent='1'
-  }else if (gridItems[index].textContent ==='x'&& gridItems[index+5].textContent ==='x'){
+  if ((gridItems[index].textContent ==='x'&& gridItems[index+5].textContent ==='x')|| (gridItems[index].textContent ==='x'&& gridItems[index+2].textContent ==='x')|| (gridItems[index].textContent ==='x'&& gridItems[index+6].textContent ==='x')|| (gridItems[index].textContent ==='x'&& gridItems[index+7].textContent ==='x')|| (gridItems[index].textContent ==='x'&& gridItems[index-3].textContent ==='x')|| (gridItems[index].textContent ==='x'&& gridItems[index-4].textContent ==='x')|| (gridItems[index].textContent ==='x'&& gridItems[index-5].textContent ==='x')){
     gridItems[index-1].textContent='2'
   }else if (gridItems[index].textContent ==='x'&& gridItems[index+5].textContent ==='x' && gridItems[index+6].textContent ==='x'){
     gridItems[index-1].textContent='3'
