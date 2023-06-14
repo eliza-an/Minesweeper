@@ -13,19 +13,24 @@ while (randomArray.length < 10) {
 // Change the values of selected divs to 'x'
 randomArray.forEach(index => {
   gridItems[index].textContent = 'x';
-  if ((gridItems[index].textContent ==='x'&& gridItems[index+5].textContent ==='x')|| (gridItems[index].textContent ==='x'&& gridItems[index+2].textContent ==='x')|| (gridItems[index].textContent ==='x'&& gridItems[index+6].textContent ==='x')|| (gridItems[index].textContent ==='x'&& gridItems[index+7].textContent ==='x')|| (gridItems[index].textContent ==='x'&& gridItems[index-3].textContent ==='x')|| (gridItems[index].textContent ==='x'&& gridItems[index-4].textContent ==='x')|| (gridItems[index].textContent ==='x'&& gridItems[index-5].textContent ==='x')){
-    gridItems[index-1].textContent='2'
+if(index===2 || index===7 ||index===12|| index===17 || index===22 ||index===27|| index===32 || index===37 ||index===42 || index===47  ){
+
+  if(gridItems[index+5].textContent !='x' && gridItems[index+2].textContent !='x'&& gridItems[index+6].textContent !='x' && gridItems[index+7].textContent !='x' && gridItems[index-3].textContent !='x' && gridItems[index-4].textContent !='x' && gridItems[index-5].textContent !='x' && gridItems[index+1].textContent !='x'){
+    gridItems[index+1].textContent='1'
+  }else if (gridItems[index-1].textContent !='x'&& (gridItems[index+5].textContent ==='x'|| gridItems[index+2].textContent ==='x'|| gridItems[index+6].textContent ==='x'||  gridItems[index+7].textContent ==='x'|| gridItems[index-3].textContent ==='x'|| gridItems[index-4].textContent ==='x'|| gridItems[index-5].textContent ==='x')){
+    gridItems[index+1].textContent='2'
   }else if (gridItems[index].textContent ==='x'&& gridItems[index+5].textContent ==='x' && gridItems[index+6].textContent ==='x'){
-    gridItems[index-1].textContent='3'
+    gridItems[index+1].textContent='3'
   }else if (gridItems[index].textContent ==='x'&& gridItems[index+5].textContent ==='x' && gridItems[index+6].textContent ==='x' && gridItems[index+7].textContent ==='x'){
-    gridItems[index-1].textContent='4'
+    gridItems[index+1].textContent='4'
   }else if (gridItems[index].textContent ==='x'&& gridItems[index+5].textContent ==='x' && gridItems[index+6].textContent ==='x' && gridItems[index+7].textContent ==='x' && gridItems[index+2].textContent ==='x'){
-    gridItems[index-1].textContent='5'
+    gridItems[index+1].textContent='5'
   }else if (gridItems[index].textContent ==='x'&& gridItems[index+5].textContent ==='x' && gridItems[index+6].textContent ==='x' && gridItems[index+7].textContent ==='x' && gridItems[index+2].textContent ==='x' && gridItems[index-3].textContent ==='x'){
-    gridItems[index-1].textContent='6'
+    gridItems[index+1].textContent='6'
   }else if (gridItems[index].textContent ==='x'&& gridItems[index+5].textContent ==='x' && gridItems[index+6].textContent ==='x' && gridItems[index+7].textContent ==='x' && gridItems[index+2].textContent ==='x' && gridItems[index-3].textContent ==='x' && gridItems[index-4].textContent ==='x'){
-    gridItems[index-1].textContent='7'
+    gridItems[index+1].textContent='7'
   }else if  (gridItems[index].textContent ==='x'&& gridItems[index+5].textContent ==='x' && gridItems[index+6].textContent ==='x' && gridItems[index+7].textContent ==='x' && gridItems[index+2].textContent ==='x' && gridItems[index-3].textContent ==='x' && gridItems[index-4].textContent ==='x' && gridItems[index-5].textContent ==='x'){
-    gridItems[index-1].textContent='8'
+    gridItems[index+1].textContent='8'
   }
-});
+}});
+
