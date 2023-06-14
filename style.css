@@ -1,6 +1,6 @@
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(5, 50px);
+    grid-template-columns: repeat(10, 50px);
     position: absolute;
     top: 50%;
     transform: translate(-50%,-50%);
